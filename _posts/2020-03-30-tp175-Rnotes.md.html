@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>tp175, Rnotes - test</title>
+  <title>tp175, course-intro-devR</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -773,7 +773,7 @@ hljs.initHighlightingOnLoad();
    
   
 
-
+<style>.small-code pre code {font-size: 1em}.reveal pre code {font-size: 1.20em}.reveal h3 {font-size: 3em; font-weight: bold}.reveal p {font-size: 0.9em}body {background-color: white}.footer {position: fixed; top: 90%; text-align:right; width:100%}</style>
 
 
 
@@ -784,14 +784,17 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>tp175, Rnotes - test</h1><p></p>
+<h1>tp175, course-intro-devR</h1><p></p>
 
 <div class="slideContent" >
+<p style="font-size:30px">
+source: <a href="https://github.com/tp175/course-intro-devR" target="_blank"> https://github.com/tp175/course-intro-devR </a> <br>
+</p>
 
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section id="slide1" data-transition="linear" data-transition-speed="default">
 <h3>Introduction: R and Jupyter</h3>
 <div class="slideContent" >
 <p><b><i>&ldquo;R is a free software environment for statistical computing and graphics&rdquo; </i></b><br>
@@ -799,8 +802,9 @@ hljs.initHighlightingOnLoad();
 <b><i>&ldquo;The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text&rdquo; </i></b><br>
 <a href="https://jupyter.org/"> <a href="http://www.jupyter.org">www.jupyter.org</a> </a> <br></p>
 
-<p>Here, we&#39;ll be touching upon some of the fundamentals of programming in the <i>R</i> language. Topics to be covered include: functions, structures, packages, manipulation, graphics, saving and loading. XXX <br><br>
-First though lets briefly talk Jupyter &hellip;</p>
+<p>Here, we&#39;ll be touching upon some of the fundamentals of programming in the <i>R</i> language. Topics to be covered include: functions, structures, packages, manipulation, graphics, saving and loading. XXX</p>
+
+<div class="footer"> 1 </div>
 
 </div>
 
@@ -811,6 +815,8 @@ First though lets briefly talk Jupyter &hellip;</p>
 <p>Segregated into a kernel (execute code) and dashboard &amp; editor (interface), Jupyter permits mixing real-time coding with interactive rich-text ouputs in self-contained <i>.ipynb(JSON)</i> documents (local or remote). <br><br>
 Kernels include Julia, Python, R, MATLAB/Octave, etc. <br><br>
 Interact with input cells (code, markdown, etc) that exhibit an order and mode - insert, edit, run. <br></p>
+
+<div class="footer"> 2 </div>
 
 </div>
 
@@ -831,6 +837,8 @@ Interact with terminal directly or indirectly through scripts (<i>.R</i> extensi
 
 <pre><code class="r">list.files()
 </code></pre>
+
+<div class="footer"> 3 </div>
 
 </div>
 
@@ -853,6 +861,8 @@ Example operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code
 <pre><code>[1]  1  4  9 16
 </code></pre>
 
+<div class="footer"> 4 </div>
+
 </div>
 
 </section>
@@ -874,6 +884,8 @@ Example operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code
 <pre><code>[1] 9
 </code></pre>
 
+<div class="footer"> 5 </div>
+
 </div>
 
 </section>
@@ -888,13 +900,15 @@ With no defined arguments, functions when called will resort to default values f
 sort( runif(10, min=0, max=1) , decreasing=FALSE, index.return=FALSE)
 </code></pre>
 
-<pre><code> [1] 0.02843231 0.14980274 0.40573506 0.48227831 0.67171656 0.85348217
- [7] 0.88061364 0.89323201 0.91630896 0.99758837
+<pre><code> [1] 0.01936555 0.19662327 0.36099040 0.60222850 0.66911070 0.83375223 0.84840133 0.87440672 0.93633680 0.95054079
 </code></pre>
 
 <pre><code class="r">#check documentation (usage, arguments, details, examples, etc)
+?runif
 ?sort
 </code></pre>
+
+<div class="footer"> 6 </div>
 
 </div>
 
@@ -904,7 +918,7 @@ sort( runif(10, min=0, max=1) , decreasing=FALSE, index.return=FALSE)
 <div class="slideContent" >
 <p>Perform procedures - Input to Output with options/arguments (<i>round brackets</i>). <br>
 Combining elements <code>c()</code> is one of the simplest base functions. <br>
-With no defined arguments, functions when called will resort to default values found in documentation (? / help). <br><br></p>
+With no defined arguments, functions when called will resort to default values found in documentation (? / help).</p>
 
 <pre><code class="r">calculate_SE &lt;- function(x){
     #define function to calculate standard error ({body - local env})
@@ -917,21 +931,371 @@ calculate_SE( c(10.4, 5.6, 3.1, 6.4, 21.7) ); #run function
 <pre><code>[1] 3.281859
 </code></pre>
 
+<div class="footer"> 7 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Assignment</h3>
+<div class="slideContent" >
+<p>Commands<code> -&gt; </code>OR<code> = </code>assigns and stores outputs/results as well as functions to memory (case-sensitive). <br>
+<i>R</i> operates on named data structures, that is, sets of ordered entities.<br>
+Example vectors: numeric (double, integer, complex), logical, character.</p>
+
+<pre><code class="r">x &lt;- c(10.4, 5.6, 3.1, 6.4, 21.7); 
+#x = c(10.4, 5.6, 3.1, 6.4, 21.7);
+
+typeof(x)
+x
+</code></pre>
+
+<pre><code>[1] &quot;double&quot;
+[1] 10.4  5.6  3.1  6.4 21.7
+</code></pre>
+
+<div class="footer"> 8 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Assignment</h3>
+<div class="slideContent" >
+<p>Commands <code> -&gt; OR = </code> assigns and stores outputs/results as well as functions to memory (case-sensitive). <br>
+<i>R</i> operates on named data structures, that is, sets of ordered entities.<br>
+Example vectors: numeric (double, integer, complex), logical, character.</p>
+
+<pre><code class="r">y &lt;- c(&quot;test&quot;, &quot;control&quot;, &quot;control&quot;, &quot;control&quot;, &quot;test&quot;);
+#y = c(&quot;test&quot;, &quot;control&quot;, &quot;control&quot;, &quot;control&quot;, &quot;test&quot;);
+
+typeof(y)
+y
+</code></pre>
+
+<pre><code>[1] &quot;character&quot;
+[1] &quot;test&quot;    &quot;control&quot; &quot;control&quot; &quot;control&quot; &quot;test&quot;   
+</code></pre>
+
+<div class="footer"> 9 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Structures</h3>
+<div class="slideContent" >
+<p>While vectors are the most important type of object/structure/variable in <i>R</i>, others exist each with intrinsic attributes (mode and length). Conversion between types is relatively intuitive - <code>as.character</code>, <code>as.numeric</code>, <code>as.data.frame</code>. <br>
+Examples: matrices, lists, dataframes.</p>
+
+<pre><code class="r">set.seed(5); #define seed to reproduce random results 
+
+#matrices - visualize toy example
+X = matrix( runif(20, min=0, max=10) , nrow=4, ncol=5, byrow=FALSE);
+
+dim(X)
+X
+</code></pre>
+
+<pre><code>[1] 4 5
+         [,1]     [,2]     [,3]     [,4]     [,5]
+[1,] 2.002145 1.046501 9.565001 3.184040 3.875257
+[2,] 6.852186 7.010575 1.104530 5.591728 8.878698
+[3,] 9.168758 5.279600 2.732849 2.625931 5.549226
+[4,] 2.843995 8.079352 4.905132 2.018752 8.421794
+</code></pre>
+
+<div class="footer"> 10 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Indexing</h3>
+<div class="slideContent" >
+<p>Access parts of a dataset, rows then columns (<i>square brackets</i>), starting with 1, can be coded multiple ways. <br>
+Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).</p>
+
+<pre><code class="r">X[2, 4]
+</code></pre>
+
+<pre><code>[1] 5.591728
+</code></pre>
+
+<pre><code class="r">t(X)[2, 4]; #transpose (rows to columns, columns to rows)
+</code></pre>
+
+<pre><code>[1] 8.079352
+</code></pre>
+
+<div class="footer"> 11 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Indexing</h3>
+<div class="slideContent" >
+<p>Access parts of a dataset, rows then columns (<i>square brackets</i>), starting with 1, can be coded multiple ways. <br>
+Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).</p>
+
+<pre><code class="r">X[c(2,4), 4] = c(0,10); #replace elements
+X
+</code></pre>
+
+<pre><code>         [,1]     [,2]     [,3]      [,4]     [,5]
+[1,] 2.002145 1.046501 9.565001  3.184040 3.875257
+[2,] 6.852186 7.010575 1.104530  0.000000 8.878698
+[3,] 9.168758 5.279600 2.732849  2.625931 5.549226
+[4,] 2.843995 8.079352 4.905132 10.000000 8.421794
+</code></pre>
+
+<div class="footer"> 12 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Indexing</h3>
+<div class="slideContent" >
+<p>Access parts of a dataset, rows then columns (<i>square brackets</i>), starting with 1, can be coded multiple ways. <br>
+Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).</p>
+
+<pre><code class="r">X[1:3, 2:3]
+
+cbind(X[1:3, 2], X[1:3, 3]); #concatenate columns
+
+#rbind(X[1, 2:3], X[2, 2:3], X[3, 2:3]); #concatenate rows
+</code></pre>
+
+<pre><code>         [,1]     [,2]
+[1,] 1.046501 9.565001
+[2,] 7.010575 1.104530
+[3,] 5.279600 2.732849
+         [,1]     [,2]
+[1,] 1.046501 9.565001
+[2,] 7.010575 1.104530
+[3,] 5.279600 2.732849
+</code></pre>
+
+<div class="footer"> 13 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Conditions</h3>
+<div class="slideContent" >
+<p>Checks that control the flow of actions/execution (if / else). <br>
+Comparsion: lesser than (<code>&lt;</code>), greater than (<code>&gt;</code>), equal (<code>==</code>), different (<code>!=</code>). <br>
+Logical/Boolean: AND (<code>&amp;</code>) if both <i>true</i>, OR (<code>|</code>) if either <i>true</i>, NOT (<code>!</code>) converts <i>true</i> to <i>false</i>.</p>
+
+<pre><code class="r">X[X &gt; 5]; #output - free from dimensions (byrow=FALSE)
+X
+</code></pre>
+
+<pre><code> [1]  6.852186  9.168758  7.010575  5.279600  8.079352  9.565001 10.000000  8.878698  5.549226  8.421794
+         [,1]     [,2]     [,3]      [,4]     [,5]
+[1,] 2.002145 1.046501 9.565001  3.184040 3.875257
+[2,] 6.852186 7.010575 1.104530  0.000000 8.878698
+[3,] 9.168758 5.279600 2.732849  2.625931 5.549226
+[4,] 2.843995 8.079352 4.905132 10.000000 8.421794
+</code></pre>
+
+<div class="footer"> 14 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Conditions</h3>
+<div class="slideContent" >
+<p>Checks that control the flow of actions/execution (if / else). <br>
+Comparsion: lesser than (<code>&lt;</code>), greater than (<code>&gt;</code>), equal (<code>==</code>), different (<code>!=</code>). <br>
+Logical/Boolean: AND (<code>&amp;</code>) if both <i>true</i>, OR (<code>|</code>) if either <i>true</i>, NOT (<code>!</code>) converts <i>true</i> to <i>false</i>.</p>
+
+<pre><code class="r">X[X &gt;= 6 &amp; X &lt;= 7]; #across whole matrix
+</code></pre>
+
+<pre><code>[1] 6.852186
+</code></pre>
+
+<pre><code class="r">X[1, X[1, ] &gt;= 6 &amp; X[1, ] &lt;= 7]; #only first row
+</code></pre>
+
+<pre><code>numeric(0)
+</code></pre>
+
+<div class="footer"> 15 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Conditions</h3>
+<div class="slideContent" >
+<p>Checks that control the flow of actions/execution (if / else). <br>
+Comparsion: lesser than (<code>&lt;</code>), greater than (<code>&gt;</code>), equal (<code>==</code>), different (<code>!=</code>). <br>
+Logical/Boolean: AND (<code>&amp;</code>) if both <i>true</i>, OR (<code>|</code>) if either <i>true</i>, NOT (<code>!</code>) converts <i>true</i> to <i>false</i>.</p>
+
+<pre><code class="r">if (dim(X)[1] != 4) {
+    print(&quot;check - dimensions don&#39;t match&quot;); #first check cond.1, TRUE do something
+} else if (dim(X)[2] != 5) {
+    print(&quot;check - dimensions don&#39;t match&quot;); #FALSE then try cond.2, TRUE now do something different
+} else {
+    print(&quot;good - dimensions match&quot;); #FALSE again, do something else
+}
+</code></pre>
+
+<pre><code>[1] &quot;good - dimensions match&quot;
+</code></pre>
+
+<div class="footer"> 16 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Conditions</h3>
+<div class="slideContent" >
+<p>Checks that control the flow of actions/execution (if / else). <br>
+Comparsion: lesser than (<code>&lt;</code>), greater than (<code>&gt;</code>), equal (<code>==</code>), different (<code>!=</code>). <br>
+Logical/Boolean: AND (<code>&amp;</code>) if both <i>true</i>, OR (<code>|</code>) if either <i>true</i>, NOT (<code>!</code>) converts <i>true</i> to <i>false</i>.</p>
+
+<pre><code class="r">y[y == &quot;test&quot;]
+</code></pre>
+
+<pre><code>[1] &quot;test&quot; &quot;test&quot;
+</code></pre>
+
+<div class="footer"> 17 </div>
+
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
 <h3>Check-In Point I</h3>
 <div class="slideContent" >
-<p><br>
-EXERCISE - create new variable, randlett, of 2000 randomly sampled ?LETTERS (hint), and count occurrences (a-z).
-<br><br></p>
+<p>1) EXERCISE - create new variable, randlett, of 2000 randomly sampled ?LETTERS (hint), and count occurrences (a-z).</p>
 
 <pre><code>
- a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y 
-71 79 75 74 80 78 90 76 78 59 76 89 83 64 79 81 86 92 69 66 81 79 71 74 73 
- z 
-77 
+ a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z 
+71 73 77 81 83 77 83 71 80 83 88 65 78 69 67 72 91 67 76 81 75 71 77 94 72 78 
+</code></pre>
+
+<p><br>
+2) EXERCISE - define new function, roundndivide, to take two numeric/double inputs (x1 and x2), rounds to nearest integers, divides integers, and returns logical output (TRUE/FALSE) if absolute of result is greater than 1. </p>
+
+<pre><code>[1] FALSE
+</code></pre>
+
+<div class="footer"> 18 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Check-In Point I</h3>
+<div class="slideContent" >
+<p>1) EXERCISE - create new variable, randlett, of 2000 randomly sampled ?LETTERS (hint), and count occurrences (a-z).</p>
+
+<pre><code class="r">randlett &lt;- table( letters[sample(1:length(letters), 2000, replace=TRUE)] );
+print(randlett)
+</code></pre>
+
+<pre><code>
+ a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z 
+71 72 72 73 80 87 98 74 68 64 83 90 79 77 91 61 71 78 78 68 79 85 73 73 82 73 
+</code></pre>
+
+<div class="footer"> 19 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Check-In Point I</h3>
+<div class="slideContent" >
+<p>2) EXERCISE - define new function, roundndivide, to take two numeric/double inputs (x1 and x2), rounds to nearest integers, divides integers, and returns logical output (TRUE/FALSE) if absolute of result is greater than 1. </p>
+
+<pre><code class="r">roundndivide &lt;- function(x1, x2){ if ( abs((round(x1, digits=0)/round(x2, digits=0))) &gt; 1){ TRUE }else{ FALSE } }
+print( roundndivide(11.25, 22.25) )
+</code></pre>
+
+<pre><code>[1] FALSE
+</code></pre>
+
+<div class="footer"> 20 </div>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Iterations</h3>
+<div class="slideContent" >
+<p>Scalar loops, element by element, can be used to repeat procedures (for / while). <br>
+Vectorization, all elements at once, however is faster and scalable - <code>apply</code> (array), <code>lapply</code> (list), <code>sapply</code> (vector) - reducing redundancies/overhead, <br>
+using Fortan / C / C++ routines, and so on.</p>
+
+<pre><code class="r">#initiate variable of NA (missing values) to fill during loop (preallocate - growing objects inefficient)
+colMean = rep(NA, times=dim(X)[2]);
+
+for (i in 1:dim(X)[2]){
+    #variable i in sequence start:end
+    print(i)
+    colMean[i] = mean(X[ ,i])
+    #break;#next
+}
+</code></pre>
+
+<pre><code>[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+</code></pre>
+
+<pre><code class="r">colMean
+</code></pre>
+
+<pre><code>[1] 5.216771 5.354007 4.576878 3.952493 6.681244
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Iterations</h3>
+<div class="slideContent" >
+<p>Scalar loops, element by element, can be used to repeat procedures (for / while). <br>
+Vectorization, all elements at once, however is faster and scalable - <code>apply</code> (array), <code>lapply</code> (list), <code>sapply</code> (vector) - reducing redundancies/overhead, <br>
+using Fortan / C / C++ routines, and so on.</p>
+
+<pre><code class="r">colMean = apply(X, 2, mean); #column by column
+colMean
+</code></pre>
+
+<pre><code>[1] 5.216771 5.354007 4.576878 3.952493 6.681244
+</code></pre>
+
+<pre><code class="r">#colMeans(X)
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Iterations</h3>
+<div class="slideContent" >
+<p>Scalar loops, element by element, can be used to repeat procedures (for / while). <br>
+Vectorization, all elements at once, however is faster and scalable - <code>apply</code> (array), <code>lapply</code> (list), <code>sapply</code> (vector) - reducing redundancies/overhead, <br>
+using Fortan / C / C++ routines, and so on.</p>
+
+<pre><code class="r">rowSE = apply(X, 1, calculate_SE); #row by row
+rowSE
+</code></pre>
+
+<pre><code>[1] 1.489023 1.766715 1.193925 1.298748
 </code></pre>
 
 </div>
@@ -991,8 +1355,8 @@ function commandsForSlide(indexh) {
       transition: 'linear',
       transitionSpeed: 'default',
       rtl: false,
-      width: 960,
-      height: 700,
+      width: 1300,
+      height: 750,
     
       dependencies: []
     });
