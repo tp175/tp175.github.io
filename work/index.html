@@ -6,8 +6,8 @@ title: Work
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <li><a href="{{ post.url }}" title="{{ post.title }}" class="post">{{ post.title }}</a><br>
-		<br><span style="font-size: 1.1em; font-style: italic;">{{ post.describe }}</span>
-		<br><span style="font-size: 1.1em; font-style: italic;">{{ post.date | date_to_string }}</span>
+		<br><span style="font-size: 1.0em; font-style: italic;">{{ post.describe }}</span>
+		<br><span style="font-size: 1.0em; font-style: italic;">{{ post.date | date_to_string }}</span>
 		</li><br>
 	  {% endfor %}
 	</ul>
