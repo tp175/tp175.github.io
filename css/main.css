@@ -25,10 +25,6 @@ h1 {
     font-size: 4em;
     font-family: 'Roboto', Arial, Helevtica, sans-serif;
 }
-h2 {
-    font-size: 2.5em;
-    font-family:'Roboto', Arial, Helevtica, sans-serif;
-}
 h4 {
     font-size: 2em;
     font-family: 'Roboto', Arial, Helevtica, sans-serif;
@@ -45,8 +41,8 @@ footer {
 }
 
 ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.1em;
+    margin-left: 40px;margin-top: 0px;margin-bottom: 50px;
+    font-size: 1.4em;
 	text-transform: lowercase;
 }
 
