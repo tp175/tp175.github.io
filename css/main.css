@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
     margin: 60px auto;
+	font-family: 'Roboto', Arial, Helevtica, sans-serif;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', Arial, Helevtica, sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -20,27 +22,32 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 4em;
+    font-family: 'Roboto', Arial, Helevtica, sans-serif;
 }
-h1 {
+h2 {
+    font-size: 2.5em;
+    font-family:'Roboto', Arial, Helevtica, sans-serif;
+}
+h4 {
     font-size: 2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', Arial, Helevtica, sans-serif;
 }
 p {
     font-size: 1.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', Arial, Helevtica, sans-serif;
     line-height: 1.4em;
     color: #333;
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 1.0em;
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.1em;
+	text-transform: lowercase;
 }
 
 ul.posts li {
