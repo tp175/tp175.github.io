@@ -1,24 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
-    margin: 60px auto;
+	margin: 60px auto;
 	font-family: 'Roboto', Arial, Helevtica, sans-serif;
-    width: 70%;
+	width: 70%;
+	background-color: #FFFFFF; 
 }
-nav ul, footer ul {
+nav ul {
+    font-family: 'Roboto', Arial, Helevtica, sans-serif;
+    padding-top: 15px; padding-bottom: 15px; padding-left: 0px;
+    list-style: none;
+    font-weight: bold;
+	font-size: 1.25em;
+	height: 1em;
+	background-color: #FFFFFF;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer ul {
     font-family: 'Roboto', Arial, Helevtica, sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
+	font-size: 1.25em;
 }
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #808080;
 }
 a:hover {
+    text-decoration: underline;
+}
+a.nav {
+    text-decoration: none;
+    color: #808080;
+}
+a.nav:hover {
     text-decoration: underline;
 }
 h1 {
@@ -41,12 +63,12 @@ footer {
 }
 
 ul.posts { 
-    margin-left: 30px;margin-top: 0px;margin-bottom: 50px;
-    font-size: 1.4em;
+	margin-left: 30px;margin-top: 0px;margin-bottom: 50px;
+	font-size: 1.4em;
 	text-transform: lowercase;
 }
 
 ul.posts li {
-    list-style: none;
-	padding: 0.15em;
+	list-style: none;
+	padding: 0.1em;
 }
