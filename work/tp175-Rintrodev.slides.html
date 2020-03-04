@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>Rintrodev slides</title>
+<title>Rintrodev_Con slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13202,7 +13202,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:3.0em; font-weight:bold"> <b> Introduction: R and Jupyter </b> </font></p>
+<p><font style="color:#191970; font-family:calibri; font-size:3.0em; font-weight:bold"> Introduction: R and Jupyter </font></p>
 
 </div>
 </div>
@@ -13217,8 +13217,7 @@ Welcome to <em>R</em>, on HCC/Binder, through Jupyter. <br></p>
 <a href="https://www.r-project.org/"> www.r-project.org </a> <br> <br>
 <b><em>"The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text" </em></b><br>
 <a href="https://jupyter.org/"> www.jupyter.org </a> <br> <br>
-</p><p>Here, we'll be touching upon some of the fundamentals of programming in the <em>R</em> language. Topics to be covered include: functions, structures, packages, manipulation, graphics, saving and loading. <br><br>
-First though lets briefly talk Jupyter ...</p>
+</p><p>Here, we'll be touching upon some of the fundamentals of programming in the <em>R</em> language. Topics to be covered include: functions, structures, packages, manipulation, graphics, saving and loading.</p>
 
 </div>
 </div>
@@ -13226,13 +13225,13 @@ First though lets briefly talk Jupyter ...</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Jupyter Notebook
 </font>
 <br>
 <font style="color:black; font-family:calibri; font-size:1.0em">
 Segregated into a kernel (execute code) and dashboard/editor (interface), Jupyter permits mixing real-time coding with interactive rich-text ouputs in self-contained <em>.ipynb(JSON)</em> documents (local or remote). <br>
-Kernels include Julia, Python, R, MATLAB/Octave, etc. <br>
+    Kernels include <b>Julia</b>, <b>Python</b>, <b>R</b>, <b>MATLAB/Octave</b>, etc. <br>
 Interact with input cells (code, markdown, etc) that exhibit an order and mode - insert, edit, run. <br>
 </font></p>
 
@@ -13250,7 +13249,7 @@ Interact with input cells (code, markdown, etc) that exhibit an order and mode -
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 R
 </font>
 <br>
@@ -13282,11 +13281,7 @@ Interact with terminal directly or indirectly through scripts (<em>.R</em> exten
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#get (/set) current/working directory</span>
-<span class="nf">getwd</span><span class="p">()</span>
-<span class="c1">#setwd(&#39;/home/XXX&#39;);</span>
-
-<span class="c1">#list.files(); #RUN BELOW, INSERT NEW CELL ...</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">getwd</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13306,20 +13301,11 @@ Interact with terminal directly or indirectly through scripts (<em>.R</em> exten
 </div>
 </div>
 
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 1.</b>  a popular GUI alternative is R Studio.
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Calculations
 </font>
 <br>
@@ -13468,7 +13454,7 @@ Example operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Functions
 </font>
 <br>
@@ -13539,7 +13525,7 @@ With no defined arguments, functions when called will resort to default values f
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
@@ -13576,20 +13562,11 @@ With no defined arguments, functions when called will resort to default values f
 </div>
 </div>
 
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 2.</b>  source("Rcode.R").
-</div>
-</div>
-</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Assignment
 </font>
 <br>
@@ -13711,20 +13688,11 @@ Example vectors: numeric (double, integer, complex), logical, character.
 </div>
 </div>
 
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 3.</b>  quotation characters, double (") and single ('), are exchangeable.
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Structures
 </font>
 <br>
@@ -13800,7 +13768,7 @@ Examples: matrices, lists, dataframes.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Indexing
 </font>
 <br>
@@ -13875,7 +13843,7 @@ Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[64]:</div>
@@ -13916,7 +13884,7 @@ Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
@@ -13982,7 +13950,7 @@ Wildcard <code>:</code> generates a regular sequence from start to stop (by 1).
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Conditions
 </font>
 <br>
@@ -14104,7 +14072,7 @@ Logical/Boolean: AND (<code>&</code>) if both <em>true</em>, OR (<code>|</code>)
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
@@ -14141,7 +14109,7 @@ Logical/Boolean: AND (<code>&</code>) if both <em>true</em>, OR (<code>|</code>)
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
@@ -14177,16 +14145,21 @@ Logical/Boolean: AND (<code>&</code>) if both <em>true</em>, OR (<code>|</code>)
 </div>
 </div>
 
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 4.</b>  use tab for auto-completion & arrow keys for command history.
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
+Check-In Point I
+</font>
+<br>
+<font style="color:black; font-family:calibri; font-size:1.0em">
+xxx
+</font></p>
+
 </div>
 </div>
-</div>
-</div></section></section><section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
@@ -14203,18 +14176,17 @@ Logical/Boolean: AND (<code>&</code>) if both <em>true</em>, OR (<code>|</code>)
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Iterations
 </font>
 <br>
 <font style="color:black; font-family:calibri; font-size:1.0em">
 Scalar loops, element by element, can be used to repeat procedures (for / while). <br>
-Vectorization, all elements at once, however is faster and scalable - <code>apply</code> (array), <code>lapply</code> (list), <code>sapply</code> (vector) - reducing redundancies/overhead, <br>
-using Fortan / C / C++ routines, and so on.
+Vectorization, all elements at once, however is faster and scalable - <code>apply</code> (array), <code>lapply</code> (list), <code>sapply</code> (vector) - reducing redundancies/overhead, using Fortan / C / C++ routines, and so on.
 </font></p>
 
 </div>
@@ -14234,8 +14206,7 @@ using Fortan / C / C++ routines, and so on.
     <span class="n">colMean[i]</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">X[</span> <span class="p">,</span><span class="n">i]</span><span class="p">)</span>
     <span class="c1">#break;#next</span>
 <span class="p">}</span>
-
-<span class="n">colMean</span>
+<span class="c1">#colMean</span>
 </pre></div>
 
     </div>
@@ -14283,7 +14254,7 @@ using Fortan / C / C++ routines, and so on.
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
@@ -14291,8 +14262,6 @@ using Fortan / C / C++ routines, and so on.
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">colMean</span> <span class="o">=</span> <span class="nf">apply</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">mean</span><span class="p">);</span> <span class="c1">#column by column</span>
 <span class="n">colMean</span>
-
-<span class="c1">#colMeans(X) #built-in</span>
 </pre></div>
 
     </div>
@@ -14322,6 +14291,19 @@ using Fortan / C / C++ routines, and so on.
 
 </div>
 
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#colMeans(X) #built-in</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -14364,26 +14346,17 @@ using Fortan / C / C++ routines, and so on.
 </div>
 </div>
 
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 5.</b>  check system.time().
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Packages
 </font>
 <br>
 <font style="color:black; font-family:calibri; font-size:1.0em">
 Executable codes/functions developed by the community are organised and shared online in resposities - these can be retrieved/downloaded (source (compile) vs bundled (compressed) vs binary (pre-built)), structured into directories (libraries) and loaded into memory to use. Packages will often require other packages - dependencies. <br> <br>
-Repositories: CRAN (official network), Bioconductor (bioinformatic specific), GitHub. <br>
+    Repositories: <b>CRAN</b> (official network), <b>Bioconductor</b> (bioinformatic specific), <b>GitHub</b>. <br>
 Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>phyloseq</code>, <code>MetaboAnalystR</code>, <code>lme4</code>.
 </font></p>
 
@@ -14665,9 +14638,7 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#install.packages(&#39;ggplot2&#39;)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span> <span class="c1">#load into session</span>
-
-<span class="c1">#source(&quot;https://bioconductor.org/biocLite.R&quot;);biocLite()</span>
-<span class="c1">#install.packages(&#39;devtools&#39;);devtools::install_github()</span>
+<span class="c1">#?detach();#?remove.packages()</span>
 </pre></div>
 
     </div>
@@ -14675,6 +14646,20 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 </div>
 
 </div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#source(&quot;https://bioconductor.org/biocLite.R&quot;);biocLite()</span>
+<span class="c1">#install.packages(&#39;devtools&#39;);devtools::install_github()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -14694,13 +14679,10 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#data(&quot;mpg&quot;, package = &quot;ggplot2&quot;)</span>
-<span class="nf">data</span><span class="p">(</span><span class="s">&quot;midwest&quot;</span><span class="p">,</span> <span class="n">package</span> <span class="o">=</span> <span class="s">&quot;ggplot2&quot;</span><span class="p">);</span> <span class="c1">#call dataset (midwest demographics) into memory/env</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">data</span><span class="p">(</span><span class="s">&quot;midwest&quot;</span><span class="p">,</span> <span class="n">package</span> <span class="o">=</span> <span class="s">&quot;ggplot2&quot;</span><span class="p">);</span> <span class="c1">#call dataset (midwest demographics) into memory/env</span>
 
 <span class="nf">class</span><span class="p">(</span><span class="n">midwest</span><span class="p">)</span>
 <span class="nf">dim</span><span class="p">(</span><span class="n">midwest</span><span class="p">)</span>
-
-<span class="c1">#?detach();#?remove.packages()</span>
 </pre></div>
 
     </div>
@@ -14751,7 +14733,7 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em">
 <b> Dataframes </b>
 </font>
 <br>
@@ -14842,7 +14824,7 @@ Without such restrictions, variable type would default to a basic list.
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
@@ -14928,20 +14910,11 @@ Without such restrictions, variable type would default to a basic list.
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 6.</b>  tibbles are modern dataframes with subtleties (printing & subsetting).
-</div>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Manipulation
 </font>
 <br>
@@ -15002,8 +14975,6 @@ Base functions exist also and again can be coded multiple ways.
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#base method (indexed INTEGER)</span>
 <span class="n">indexOH</span> <span class="o">=</span> <span class="nf">which</span><span class="p">(</span><span class="n">midwest</span><span class="o">$</span><span class="n">state</span><span class="o">==</span><span class="s">&quot;OH&quot;</span><span class="p">);</span><span class="n">indexOH[1</span><span class="o">:</span><span class="m">10</span><span class="n">]</span>
 <span class="c1">#datOH = midwest[indexOH, ];head(datOH)</span>
-
-<span class="c1">#datminusOH = midwest[-indexOH, ]; #exclude (-)</span>
 </pre></div>
 
     </div>
@@ -15041,6 +15012,19 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#datminusOH = midwest[-indexOH, ]; #exclude (-)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -15062,7 +15046,7 @@ Base functions exist also and again can be coded multiple ways.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#dplyr uses &#39;%&gt;%&#39; as a pipe - pass left side as first argument of right side</span>
-<span class="nf">unique</span><span class="p">(</span><span class="n">midwest</span><span class="o">$</span><span class="n">state</span><span class="p">)</span>
+<span class="c1">#unique(midwest$state)</span>
 <span class="nf">distinct</span><span class="p">(</span><span class="n">midwest</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
 <span class="n">midwest</span> <span class="o">%&gt;%</span> <span class="nf">distinct</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
 </pre></div>
@@ -15141,7 +15125,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[66]:</div>
@@ -15187,7 +15171,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[67]:</div>
@@ -15232,7 +15216,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[68]:</div>
@@ -15277,7 +15261,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
@@ -15319,7 +15303,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
@@ -15333,7 +15317,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
@@ -15383,7 +15367,7 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[43]:</div>
@@ -15391,9 +15375,7 @@ Base functions exist also and again can be coded multiple ways.
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#reshape/format - wide to long (ggplot2 likes)</span>
 <span class="n">newdflong</span> <span class="o">&lt;-</span> <span class="nf">gather</span><span class="p">(</span><span class="n">newdf</span><span class="p">,</span> <span class="n">tPoint</span><span class="p">,</span> <span class="n">tMeasure</span><span class="p">,</span> <span class="n">tp1</span><span class="o">:</span><span class="n">tp3</span><span class="p">,</span> <span class="n">factor_key</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
-<span class="n">newdflong</span>
-
-<span class="c1">#?spread(); #reshape/format - long to wide</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">newdflong</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="m">8</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15436,7 +15418,34 @@ Base functions exist also and again can be coded multiple ways.
 </div>
 </div>
 
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#?spread(); #reshape/format - long to wide</span>
+</pre></div>
+
+    </div>
 </div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
+Check-In Point II
+</font>
+<br>
+<font style="color:black; font-family:calibri; font-size:1.0em">
+xxx
+</font></p>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
@@ -15457,7 +15466,7 @@ Base functions exist also and again can be coded multiple ways.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Graphics
 </font>
 <br>
@@ -16869,7 +16878,7 @@ AggJCPj/g4vWbsXJzyUAAAAASUVORK5CYII="
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#print figures to file (pdf / png / svg / etc)</span>
@@ -16887,35 +16896,21 @@ AggJCPj/g4vWbsXJzyUAAAAASUVORK5CYII="
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<strong>png:</strong> 2
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 7.</b>  packages often come with tutorials called vignettes.
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
+Check-In Point III
+</font>
+<br>
+<font style="color:black; font-family:calibri; font-size:1.0em">
+xxx
+</font></p>
+
 </div>
 </div>
-</div>
-</div></div></section></section><section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[50]:</div>
@@ -16932,11 +16927,11 @@ AggJCPj/g4vWbsXJzyUAAAAASUVORK5CYII="
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Saving / Writing
 </font>
 <br>
@@ -17005,7 +17000,6 @@ Results (data, figures, apps) can be outputted as other files also.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">rm</span><span class="p">(</span><span class="n">plt1</span><span class="p">,</span><span class="n">plt2</span><span class="p">,</span><span class="n">plt3</span><span class="p">,</span><span class="n">plt4</span><span class="p">)</span> <span class="c1">#remove env objects</span>
-<span class="nf">ls</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -17049,20 +17043,44 @@ Results (data, figures, apps) can be outputted as other files also.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">save.image</span><span class="p">(</span><span class="s">&quot;05_29_2019.RData&quot;</span><span class="p">)</span>
-<span class="c1">#save(list=c(&quot;datOH&quot;,&quot;datminusOH&quot;), file=&quot;05_29_2019.RData&quot;)</span>
-
-<span class="c1">#load(&quot;05_29_2019.RData&quot;)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">ls</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">save.image</span><span class="p">(</span><span class="s">&quot;05_29_2019.RData&quot;</span><span class="p">)</span>
+<span class="c1">#save(list=c(&quot;datOH&quot;,&quot;datminusOH&quot;), file=&quot;05_29_2019.RData&quot;)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#load(&quot;05_29_2019.RData&quot;)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -17075,7 +17093,7 @@ Results (data, figures, apps) can be outputted as other files also.
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -17083,9 +17101,19 @@ Results (data, figures, apps) can be outputted as other files also.
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">write.table</span><span class="p">(</span><span class="n">midwest</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="s">&quot;ExampleGGData.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
 <span class="c1">#write.table(midwest, file=&quot;ExampleGGData.txt&quot;, sep=&quot;\t&quot;)</span>
+</pre></div>
 
-<span class="nf">list.files</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="n">pattern</span><span class="o">=</span><span class="s">&quot;.csv&quot;</span><span class="p">)</span> 
+    </div>
+</div>
+</div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">list.files</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="n">pattern</span><span class="o">=</span><span class="s">&quot;.csv&quot;</span><span class="p">)</span> 
 <span class="c1">#rm(list=ls());cat(&quot;\014&quot;)</span>
 </pre></div>
 
@@ -17097,7 +17125,7 @@ Results (data, figures, apps) can be outputted as other files also.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Loading / Reading
 </font>
 <br>
@@ -17108,7 +17136,7 @@ Examples: separator/delimiter (<em>",", "\t", " "</em>), header.
 
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
@@ -17116,10 +17144,7 @@ Examples: separator/delimiter (<em>",", "\t", " "</em>), header.
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="nf">read.table</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s">&quot;ExampleGGData.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
 <span class="c1">#df = read.table(file=&quot;ExampleGGData.txt&quot;, sep=&quot;\t&quot;)</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1">#?read.csv()</span>
-<span class="c1">#?read.delim()</span>
+<span class="n">df[1</span><span class="o">:</span><span class="m">2</span><span class="p">,</span><span class="n">]</span>
 </pre></div>
 
     </div>
@@ -17156,7 +17181,21 @@ Examples: separator/delimiter (<em>",", "\t", " "</em>), header.
 </div>
 </div>
 
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#?read.csv()</span>
+<span class="c1">#?read.delim()</span>
+</pre></div>
+
+    </div>
 </div>
+</div>
+
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[57]:</div>
@@ -17165,7 +17204,7 @@ Examples: separator/delimiter (<em>",", "\t", " "</em>), header.
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#https://github.com/fivethirtyeight/data</span>
 
 <span class="n">dfOnline</span> <span class="o">=</span> <span class="nf">read.table</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s">&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/bachelorette/bachelorette.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">dfOnline</span><span class="p">)</span>
+<span class="n">dfOnline[1</span><span class="o">:</span><span class="m">2</span><span class="p">,</span><span class="n">]</span>
 </pre></div>
 
     </div>
@@ -17202,16 +17241,7 @@ Examples: separator/delimiter (<em>",", "\t", " "</em>), header.
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info" style="font-style:italic; font-size:1.0em">
-<b>#Tip 8.</b>  try package 'openxlsx' for Excel.
-</div>
-</div>
-</div>
-</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
@@ -17273,7 +17303,7 @@ loaded via a namespace (and not attached):
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[59]:</div>
@@ -17290,7 +17320,7 @@ loaded via a namespace (and not attached):
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font style="color:#68829E; font-family:calibri; font-size:2.5em; font-weight:bold">
+<p><font style="color:#191970; font-family:calibri; font-size:2.5em; font-weight:bold">
 Command Line
 </font>
 <br>
@@ -17310,7 +17340,7 @@ Within a terminal <em>R</em> can be interactive (open input) or not/batch (close
 
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17323,16 +17353,6 @@ R Packages: Organize, test, document and share your code (<a href="https://r-pkg
 Tidyverse: R packages for data science (<a href="https://www.tidyverse.org/">https://www.tidyverse.org</a>) <br>
 RStudio: Cheat Sheets (<a href="https://www.rstudio.com/resources/cheatsheets/">https://www.rstudio.com/resources/cheatsheets</a>) <br>
 </font></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font size="2" color="black" face="calibri"> <b>
-Introduction: R and Jupyter <br>
-</b> </font></p>
 
 </div>
 </div>
