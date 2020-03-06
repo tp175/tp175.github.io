@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>Rintrodev_Con slides</title>
+<title>Rintrodev_Con-Copy3 slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13528,7 +13528,7 @@ With no defined arguments, functions when called will resort to default values f
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">calculate_SE</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span>
@@ -13706,7 +13706,7 @@ Examples: matrices, lists, dataframes.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#matrices - visualize toy example</span>
@@ -14154,25 +14154,91 @@ Check-In Point I
 </font>
 <br>
 <font style="color:black; font-family:calibri; font-size:1.0em">
-xxx
+1) EXERCISE - create new variable, randlett, of 2000 randomly sampled ?LETTERS (hint), and count occurrences (a-z). <br>
+2) EXERCISE - define new function, roundndivide, to take two numeric/double inputs (x1 and x2), rounds to nearest integers, divides integers, and returns logical output (TRUE/FALSE) if absolute ofm result is greater than 1.
 </font></p>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#CHECK-IN POINT</span>
-<span class="c1">#EXERCISE - create new variable, randlett, of 2000 randomly sampled ?LETTERS (hint), and count occurrences (a-z).</span>
-
-<span class="c1">#EXERCISE - define new function, roundndivide, to take two numeric/double inputs (x1 and x2), rounds to nearest integers,</span>
-<span class="c1">#divides integers, and returns logical output (TRUE/FALSE) if absolute of result is greater than 1.</span>
+<div class=" highlight hl-r"><pre><span></span><span class="c1"># TO CONTINUE CLICK &#39;TOGGLE&#39; AND MAKE ME DISAPPEAR #</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div><br>
+<a href="javascript:code_toggle()">[ TOGGLE ]</a><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">randlett</span> <span class="o">&lt;-</span> <span class="nf">table</span><span class="p">(</span> <span class="kc">letters</span><span class="nf">[sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="kc">letters</span><span class="p">),</span> <span class="m">2000</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span><span class="n">]</span> <span class="p">);</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">randlett</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t 
+ 86  81  71  64  90  93  65  58  82  86  75  66  52  97  87  70  76  62  78 109 
+  u   v   w   x   y   z 
+ 79  70  70  71  80  82 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">roundndivide</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">){</span> <span class="nf">if </span><span class="p">(</span> <span class="nf">abs</span><span class="p">((</span><span class="nf">round</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="m">0</span><span class="p">)</span><span class="o">/</span><span class="nf">round</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="m">0</span><span class="p">)))</span> <span class="o">&gt;</span> <span class="m">1</span><span class="p">){</span> <span class="kc">TRUE</span> <span class="p">}</span><span class="n">else</span><span class="p">{</span> <span class="kc">FALSE</span> <span class="p">}</span> <span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span> <span class="nf">roundndivide</span><span class="p">(</span><span class="m">11.25</span><span class="p">,</span> <span class="m">22.25</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] FALSE
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14194,7 +14260,7 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#initiate variable of NA (missing values) to fill during loop (preallocate - growing objects inefficient)</span>
@@ -14232,32 +14298,13 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 </div>
 </div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<ol class=list-inline>
-	<li>5.21677070006263</li>
-	<li>5.35400693072006</li>
-	<li>4.5768782380037</li>
-	<li>3.95249289344065</li>
-	<li>6.68124364456162</li>
-</ol>
-
-</div>
-
-</div>
-
 </div>
 </div>
 
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">colMean</span> <span class="o">=</span> <span class="nf">apply</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">mean</span><span class="p">);</span> <span class="c1">#column by column</span>
@@ -14283,7 +14330,7 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 	<li>5.21677070006263</li>
 	<li>5.35400693072006</li>
 	<li>4.5768782380037</li>
-	<li>3.95249289344065</li>
+	<li>3.35511298791971</li>
 	<li>6.68124364456162</li>
 </ol>
 
@@ -14297,7 +14344,7 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#colMeans(X) #built-in</span>
@@ -14310,7 +14357,7 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">rowSE</span> <span class="o">=</span> <span class="nf">apply</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">calculate_SE</span><span class="p">);</span> <span class="c1">#row by row</span>
@@ -14334,9 +14381,9 @@ Vectorization, all elements at once, however is faster and scalable - <code>appl
 <div class="output_html rendered_html output_subarea ">
 <ol class=list-inline>
 	<li>1.48902280369221</li>
-	<li>1.76671496729455</li>
+	<li>1.30582273781642</li>
 	<li>1.19392504007638</li>
-	<li>1.2987481128253</li>
+	<li>1.31175827801514</li>
 </ol>
 
 </div>
@@ -14365,7 +14412,7 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#lapply(.libPaths(), dir)</span>
@@ -14633,7 +14680,7 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#install.packages(&#39;ggplot2&#39;)</span>
@@ -14676,7 +14723,7 @@ Packages: <code>Tidyverse</code>, <code>Shiny</code>, <code>dada2</code>, <code>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">data</span><span class="p">(</span><span class="s">&quot;midwest&quot;</span><span class="p">,</span> <span class="n">package</span> <span class="o">=</span> <span class="s">&quot;ggplot2&quot;</span><span class="p">);</span> <span class="c1">#call dataset (midwest demographics) into memory/env</span>
@@ -14786,7 +14833,7 @@ Without such restrictions, variable type would default to a basic list.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">print</span><span class="p">(</span><span class="nf">colnames</span><span class="p">(</span><span class="n">midwest</span><span class="p">))</span>
@@ -14928,7 +14975,7 @@ Base functions exist also and again can be coded multiple ways.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#base method (logical TRUE/FALSE)</span>
@@ -14969,7 +15016,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#base method (indexed INTEGER)</span>
@@ -15042,7 +15089,7 @@ Base functions exist also and again can be coded multiple ways.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#dplyr uses &#39;%&gt;%&#39; as a pipe - pass left side as first argument of right side</span>
@@ -15058,25 +15105,6 @@ Base functions exist also and again can be coded multiple ways.
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<ol class=list-inline>
-	<li>'IL'</li>
-	<li>'IN'</li>
-	<li>'MI'</li>
-	<li>'OH'</li>
-	<li>'WI'</li>
-</ol>
-
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -15128,7 +15156,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#dplyr filters rows &amp; selects columns (%in% = belong to/member of | INVERSE with !%in%)</span>
@@ -15174,7 +15202,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#add new columns (using current data or not)</span>
@@ -15219,7 +15247,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#dplyr has helper functions for ease/speed</span>
@@ -15264,12 +15292,12 @@ Base functions exist also and again can be coded multiple ways.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#summarise data (statistics - with or without groups)</span>
 <span class="n">datsubAAR</span> <span class="o">%&gt;%</span>
-    <span class="nf">summarise</span><span class="p">(</span><span class="nf">mean</span><span class="p">(</span><span class="n">popwhite</span><span class="p">),</span> <span class="nf">median</span><span class="p">(</span><span class="n">popdensity</span><span class="p">),</span> <span class="nf">n</span><span class="p">())</span>
+    <span class="nf">summarise</span><span class="p">(</span><span class="nf">mean</span><span class="p">(</span><span class="n">popdensity</span><span class="p">),</span> <span class="nf">sd</span><span class="p">(</span><span class="n">popdensity</span><span class="p">),</span> <span class="nf">n</span><span class="p">())</span>
 
 <span class="c1">#?group_by(); #operations according groups</span>
 </pre></div>
@@ -15290,9 +15318,9 @@ Base functions exist also and again can be coded multiple ways.
 
 <div class="output_html rendered_html output_subarea ">
 <table>
-<thead><tr><th scope=col>mean(popwhite)</th><th scope=col>median(popdensity)</th><th scope=col>n()</th></tr></thead>
+<thead><tr><th scope=col>mean(popdensity)</th><th scope=col>sd(popdensity)</th><th scope=col>n()</th></tr></thead>
 <tbody>
-	<tr><td>27139.29</td><td>663.3333</td><td>51      </td></tr>
+	<tr><td>797.576 </td><td>428.5143</td><td>51      </td></tr>
 </tbody>
 </table>
 
@@ -15306,7 +15334,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#install.packages(&#39;tidyr&#39;)</span>
@@ -15320,7 +15348,7 @@ Base functions exist also and again can be coded multiple ways.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#dataframes - visualize toy example</span>
@@ -15370,7 +15398,7 @@ Base functions exist also and again can be coded multiple ways.
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#reshape/format - wide to long (ggplot2 likes)</span>
@@ -15404,10 +15432,6 @@ Base functions exist also and again can be coded multiple ways.
 	<tr><td>exp2   </td><td>control</td><td>tp2    </td><td>20     </td></tr>
 	<tr><td>exp3   </td><td>test   </td><td>tp2    </td><td>38     </td></tr>
 	<tr><td>exp4   </td><td>test   </td><td>tp2    </td><td>39     </td></tr>
-	<tr><td>exp1   </td><td>control</td><td>tp3    </td><td>20     </td></tr>
-	<tr><td>exp2   </td><td>control</td><td>tp3    </td><td>20     </td></tr>
-	<tr><td>exp3   </td><td>test   </td><td>tp3    </td><td>50     </td></tr>
-	<tr><td>exp4   </td><td>test   </td><td>tp3    </td><td>52     </td></tr>
 </tbody>
 </table>
 
@@ -15440,25 +15464,105 @@ Check-In Point II
 </font>
 <br>
 <font style="color:black; font-family:calibri; font-size:1.0em">
-xxx
+1) EXERCISE - print group statistics - min, median, max - for 'percadultpoverty' and 'percelderlypoverty', using 'inmetro', in dataframe midwest (with dplyr).  <br>
+2) EXERCISE - reshape dataframe newdflong from long to wide as new dataframe newdfwide (with tidyr).
 </font></p>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#CHECK-IN POINT </span>
-<span class="c1">#EXERCISE - print group statistics - three of your choice - for &#39;percadultpoverty&#39; and &#39;percadultpoverty&#39;, </span>
-<span class="c1">#using &#39;fakegroups&#39;, in dataframe datsubAAR (with dplyr). </span>
-
-<span class="c1">#EXERCISE - reshape dataframe newdflong from long to wide as new dataframe newdfwide (with tidyr).</span>
+<div class=" highlight hl-r"><pre><span></span><span class="c1"># TO CONTINUE CLICK &#39;TOGGLE&#39; AND MAKE ME DISAPPEAR #</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div><br>
+<a href="javascript:code_toggle()">[ TOGGLE ]</a><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">stats</span> <span class="o">&lt;-</span> <span class="n">midwest</span> <span class="o">%&gt;%</span>
+    <span class="nf">group_by</span><span class="p">(</span><span class="n">inmetro</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">select</span><span class="p">(</span><span class="n">percadultpoverty</span><span class="p">,</span> <span class="n">percelderlypoverty</span><span class="p">,</span> <span class="n">inmetro</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">summarise_all</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="n">min</span><span class="o">=</span><span class="n">min</span><span class="p">,</span> <span class="n">median</span><span class="o">=</span><span class="n">median</span><span class="p">,</span> <span class="n">max</span><span class="o">=</span><span class="n">max</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">as.data.frame</span><span class="p">(</span><span class="n">stats</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  inmetro percadultpoverty_min percelderlypoverty_min percadultpoverty_median
+1       0             4.238700               6.723426               10.926610
+2       1             1.938504               3.547067                8.647925
+  percelderlypoverty_median percadultpoverty_max percelderlypoverty_max
+1                 12.293026             43.31246               31.16197
+2                  9.034515             22.99900               16.38753
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">newdfwide</span> <span class="o">&lt;-</span> <span class="nf">spread</span><span class="p">(</span><span class="n">newdflong</span><span class="p">,</span> <span class="n">tPoint</span><span class="p">,</span> <span class="n">tMeasure</span><span class="p">)</span>
+<span class="n">newdfwide</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>sampleID</th><th scope=col>groupID</th><th scope=col>tp1</th><th scope=col>tp2</th><th scope=col>tp3</th></tr></thead>
+<tbody>
+	<tr><td>exp1   </td><td>control</td><td>10     </td><td>20     </td><td>20     </td></tr>
+	<tr><td>exp2   </td><td>control</td><td>12     </td><td>20     </td><td>20     </td></tr>
+	<tr><td>exp3   </td><td>test   </td><td>11     </td><td>38     </td><td>50     </td></tr>
+	<tr><td>exp4   </td><td>test   </td><td>11     </td><td>39     </td><td>52     </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -17356,7 +17460,21 @@ RStudio: Cheat Sheets (<a href="https://www.rstudio.com/resources/cheatsheets/">
 
 </div>
 </div>
-</div></section></section>
+</div></section></section><section><section><script>
+    var code_show=false; //true -> hide code at first
+ 
+    function code_toggle() {
+        $('div.prompt').hide(); // always hide prompt
+ 
+        if (code_show){
+            $('div.input').hide();
+        } else {
+            $('div.input').show();
+        }
+        code_show = !code_show
+    }
+    $( document ).ready(code_toggle);
+</script></section></section>
 </div>
 </div>
 
