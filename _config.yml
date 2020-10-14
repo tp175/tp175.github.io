@@ -1,4 +1,43 @@
-name: tp175, Home
+# Site settings
+title: where is this
+description: where is this also
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Thomas Payne
+user_description: x
+user_title: ( tp175 )
+email: paynet@hotmail.co.uk
+twitter_username: paynet175
+github_username:  tp175
+gplus_username:  x
+disqus_username: x
+
+# Build settings
 markdown: kramdown
-permalink: /work/:year/:month/:day/:title
-theme: jekyll-theme-minimal
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About
+    url: /about
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

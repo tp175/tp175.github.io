@@ -1,28 +1,16 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-					<li><a class="navT">tp175</a></li>
-	        		<li><a href="/" class="nav">Home</a></li>
-		        	<li><a href="/about" class="nav">About</a></li>
-	        		<li><a href="/work" class="nav">Posts</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="https://github.com/tp175" target="_blank" class="nav">github.com/tp175</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-default.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+    </body>
+</html>
