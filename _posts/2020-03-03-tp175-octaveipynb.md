@@ -14,15 +14,16 @@ categories:
 twitter_text: 'xxx'
 ---
 
-for interest I like to explore these documentation tools across programming languages, so for as for my R stuff I did the same for Octave.
+Often I like to explore documentation tools for code, so similar to my <b>R</b> workshop ('<a href="https://github.com/tp175/course-intro-devR" target="_blank">course-intro-devR</a>') I did the same for <b>Octave</b> ('<a href="https://github.com/tp175/course-intro-devOctave" target="_blank">course-intro-devOctave</a>').
 
-I set out to do this with Anaconda for Jupyter, and knitr for markdown. Both require independent Octave installation.
+I tried both Jupyter and knitr to make some smart <b>markdown</b> - both require independent <b>Octave</b> installation.
 
-Anaconda
+{% highlight bash %}
+#Anaconda
+#https://github.com/Calysto/octave_kernel
 conda create -n my-o-env
 conda install -c conda-forge octave_kernel
-
-https://github.com/Calysto/octave_kernel
+{% endhighlight %}
 
 See below - <br>
 <b><a href="/work/Ointrodev.html">ipynb</a></b>
